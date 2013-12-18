@@ -49,7 +49,7 @@ MITI.CHANGE = "mitiHashChange";/**
      * @type String
      * @static
      **/
-    s.buildDate = /*date*/"Wed, 18 Dec 2013 09:46:26 GMT"; // injected by build process
+    s.buildDate = /*date*/"Wed, 18 Dec 2013 10:49:42 GMT"; // injected by build process
 
 })( this.MITI );
 /**
