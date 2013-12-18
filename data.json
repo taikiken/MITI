@@ -1,0 +1,564 @@
+{
+    "project": {
+        "name": "inazumatv.util",
+        "version": "0.8.0",
+        "description": "inazumatv.com JavaScript core library",
+        "url": "",
+        "logo": ""
+    },
+    "files": {
+        "src/browser/Browser.js": {
+            "name": "src/browser/Browser.js",
+            "modules": {},
+            "classes": {
+                "Browser": 1
+            },
+            "fors": {
+                "Browser": 1,
+                "iOS": 1,
+                "Android": 1,
+                "IE": 1,
+                "Chrome": 1,
+                "Safari": 1,
+                "Firefox": 1
+            },
+            "namespaces": {}
+        },
+        "src/inazumatv.js": {
+            "name": "src/inazumatv.js",
+            "modules": {},
+            "classes": {},
+            "fors": {
+                "inazumatv": 1
+            },
+            "namespaces": {}
+        },
+        "src/version.js": {
+            "name": "src/version.js",
+            "modules": {
+                "inazumatv": 1
+            },
+            "classes": {
+                "Util": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "inazumatv": {
+            "name": "inazumatv",
+            "submodules": {},
+            "classes": {
+                "Browser": 1,
+                "iOS": 1,
+                "Android": 1,
+                "IE": 1,
+                "Chrome": 1,
+                "Safari": 1,
+                "Firefox": 1,
+                "inazumatv": 1,
+                "Util": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/version.js",
+            "line": 9
+        }
+    },
+    "classes": {
+        "Browser": {
+            "name": "Browser",
+            "shortname": "Browser",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv",
+            "file": "src/browser/Browser.js",
+            "line": 107,
+            "is_constructor": 1
+        },
+        "iOS": {
+            "name": "iOS",
+            "shortname": "iOS",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "Android": {
+            "name": "Android",
+            "shortname": "Android",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "IE": {
+            "name": "IE",
+            "shortname": "IE",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "Chrome": {
+            "name": "Chrome",
+            "shortname": "Chrome",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "Safari": {
+            "name": "Safari",
+            "shortname": "Safari",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "Firefox": {
+            "name": "Firefox",
+            "shortname": "Firefox",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "inazumatv": {
+            "name": "inazumatv",
+            "shortname": "inazumatv",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv"
+        },
+        "Util": {
+            "name": "Util",
+            "shortname": "Util",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv",
+            "namespace": "",
+            "file": "src/version.js",
+            "line": 9,
+            "description": "Static class holding library specific information such as the version and buildDate of\nthe library."
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/browser/Browser.js",
+            "line": 52,
+            "description": "iOS version detection",
+            "return": {
+                "description": "iOS version 配列 3桁",
+                "type": "Array"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 71,
+            "description": "Android version detection",
+            "return": {
+                "description": "Android version 配列 2桁~3桁",
+                "type": "Array"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 115,
+            "type": "{{iOS: {is: Function, number: Function, major: Function, version: Function}, Android: {is: Function, number: Function, major: Function, version: Function}, IE: {is: Function, version: Function}, Chrome: {is: Function}, Safari: {is: Function}, Firefox: {is: Function}, ie: Function, ie6: Function, ie7: Function, ie8: Function, ie9: Function, ie10: Function, ie11: Function, chrome: Function, firefox: Function, safari: Function, legacy: Function, mobile: Function, ios: Function, ios_version: Function, android_version: Function, android_version_major: Function, android_version_num: Function, android: Function, iphone: Function, ipad: Function, ipod: Function, hideURLBar: Function}}",
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 121,
+            "description": "iOS に関する情報",
+            "itemtype": "property",
+            "name": "iOS",
+            "type": "Object",
+            "static": 1,
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 129,
+            "itemtype": "method",
+            "name": "is",
+            "return": {
+                "description": "iOS か否かを返します",
+                "type": "Boolean"
+            },
+            "class": "iOS"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 137,
+            "itemtype": "method",
+            "name": "number",
+            "return": {
+                "description": "iOS version number を返します [ major, minor, build ]",
+                "type": "Array"
+            },
+            "class": "iOS"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 145,
+            "itemtype": "method",
+            "name": "major",
+            "return": {
+                "description": "iOS major version number を返します",
+                "type": "Number"
+            },
+            "class": "iOS"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 153,
+            "itemtype": "method",
+            "name": "version",
+            "return": {
+                "description": "iOS version を返します 9.99",
+                "type": "Number"
+            },
+            "class": "iOS"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 162,
+            "description": "Android に関する情報",
+            "itemtype": "property",
+            "name": "Android",
+            "type": "Object",
+            "static": 1,
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 170,
+            "itemtype": "method",
+            "name": "is",
+            "return": {
+                "description": "Android か否かを返します",
+                "type": "Boolean"
+            },
+            "class": "Android"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 178,
+            "itemtype": "method",
+            "name": "number",
+            "return": {
+                "description": "Android version number を返します [ major, minor, build ]",
+                "type": "Array"
+            },
+            "class": "Android"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 186,
+            "itemtype": "method",
+            "name": "major",
+            "return": {
+                "description": "Android major version number を返します",
+                "type": "Number"
+            },
+            "class": "Android"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 194,
+            "itemtype": "method",
+            "name": "version",
+            "return": {
+                "description": "Android version を返します 9.99",
+                "type": "Number"
+            },
+            "class": "Android"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 203,
+            "description": "IE に関する情報",
+            "itemtype": "property",
+            "name": "IE",
+            "type": "Object",
+            "static": 1,
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 211,
+            "itemtype": "method",
+            "name": "is",
+            "return": {
+                "description": "IE か否かを返します",
+                "type": "Boolean"
+            },
+            "class": "IE"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 219,
+            "itemtype": "method",
+            "name": "version",
+            "return": {
+                "description": "IE version を返します int 6 ~ 11, IE でない場合は -1",
+                "type": "Number"
+            },
+            "class": "IE"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 242,
+            "description": "Chrome に関する情報",
+            "itemtype": "property",
+            "name": "Chrome",
+            "type": "Object",
+            "static": 1,
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 250,
+            "itemtype": "method",
+            "name": "is",
+            "return": {
+                "description": "Chrome か否かを返します",
+                "type": "Boolean"
+            },
+            "class": "Chrome"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 259,
+            "description": "Safari に関する情報",
+            "itemtype": "property",
+            "name": "Safari",
+            "type": "Object",
+            "static": 1,
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 267,
+            "itemtype": "method",
+            "name": "is",
+            "return": {
+                "description": "Safari か否かを返します",
+                "type": "Boolean"
+            },
+            "class": "Safari"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 276,
+            "description": "Firefox に関する情報",
+            "itemtype": "property",
+            "name": "Firefox",
+            "type": "Object",
+            "static": 1,
+            "class": "Browser"
+        },
+        {
+            "file": "src/browser/Browser.js",
+            "line": 284,
+            "itemtype": "method",
+            "name": "is",
+            "return": {
+                "description": "Firefox か否かを返します",
+                "type": "Boolean"
+            },
+            "class": "Firefox"
+        },
+        {
+            "file": "src/inazumatv.js",
+            "line": 162,
+            "description": "Top Level\n継承に使用します",
+            "itemtype": "method",
+            "name": "extend",
+            "params": [
+                {
+                    "name": "P",
+                    "description": "親クラス",
+                    "type": "Function"
+                },
+                {
+                    "name": "C",
+                    "description": "子クラス",
+                    "type": "Function"
+                }
+            ],
+            "class": "inazumatv"
+        },
+        {
+            "file": "src/inazumatv.js",
+            "line": 175,
+            "description": "Top Level\n数値チェック",
+            "itemtype": "method",
+            "name": "isNumeric",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "",
+                    "type": "*"
+                }
+            ],
+            "class": "inazumatv"
+        },
+        {
+            "file": "src/inazumatv.js",
+            "line": 187,
+            "description": "Top Level\n範囲指定乱数生成",
+            "itemtype": "method",
+            "name": "random",
+            "params": [
+                {
+                    "name": "min",
+                    "description": "最小値",
+                    "type": "Number"
+                },
+                {
+                    "name": "max",
+                    "description": "最大値 optional",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "min ~ max 間の乱数(Float)を発生させます",
+                "type": "Number"
+            },
+            "class": "inazumatv"
+        },
+        {
+            "file": "src/version.js",
+            "line": 16,
+            "description": "The version string for this release.",
+            "itemtype": "property",
+            "name": "version",
+            "type": "String",
+            "static": 1,
+            "class": "Util",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/version.js",
+            "line": 24,
+            "description": "The build date for this release in UTC format.",
+            "itemtype": "property",
+            "name": "buildDate",
+            "type": "String",
+            "static": 1,
+            "class": "Util",
+            "module": "inazumatv"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:52"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:71"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:129"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:137"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:145"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:153"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:170"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:178"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:186"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:194"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:211"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:219"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:250"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:267"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/browser/Browser.js:284"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/inazumatv.js:187"
+        },
+        {
+            "message": "Missing item type\niOS version detection",
+            "line": " src/browser/Browser.js:52"
+        },
+        {
+            "message": "Missing item type\nAndroid version detection",
+            "line": " src/browser/Browser.js:71"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/browser/Browser.js:115"
+        }
+    ]
+}

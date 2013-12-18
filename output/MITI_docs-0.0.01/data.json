@@ -1,0 +1,678 @@
+{
+    "project": {
+        "name": "MITI",
+        "version": "0.0.01",
+        "description": "JavaScript hash change helper",
+        "url": "",
+        "logo": ""
+    },
+    "files": {
+        "src/external/HashChange.js": {
+            "name": "src/external/HashChange.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/Annai.js": {
+            "name": "src/Annai.js",
+            "modules": {
+                "inazumatv": 1
+            },
+            "classes": {
+                "Annai": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/MITI.js": {
+            "name": "src/MITI.js",
+            "modules": {},
+            "classes": {},
+            "fors": {
+                "MITI": 1
+            },
+            "namespaces": {}
+        },
+        "src/version.js": {
+            "name": "src/version.js",
+            "modules": {
+                "MITI": 1
+            },
+            "classes": {
+                "MITI": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "inazumatv": {
+            "name": "inazumatv",
+            "submodules": {},
+            "classes": {
+                "Annai": 1
+            },
+            "fors": {
+                "MITI": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/Annai.js",
+            "line": 37
+        },
+        "MITI": {
+            "name": "MITI",
+            "submodules": {},
+            "classes": {
+                "MITI": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/version.js",
+            "line": 7
+        }
+    },
+    "classes": {
+        "Annai": {
+            "name": "Annai",
+            "shortname": "Annai",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "inazumatv",
+            "namespace": "",
+            "file": "src/Annai.js",
+            "line": 37,
+            "description": "hash change 監視 singleton",
+            "is_constructor": 1,
+            "return": {
+                "description": "Annai instance を返します",
+                "type": "Annai"
+            }
+        },
+        "MITI": {
+            "name": "MITI",
+            "shortname": "MITI",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "MITI",
+            "namespace": "",
+            "file": "src/version.js",
+            "line": 7,
+            "description": "Static class holding library specific information such as the version and buildDate of\nthe library."
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/external/HashChange.js",
+            "line": 1,
+            "description": "license inazumatv.com\nauthor (at)taikiken / htp://inazumatv.com\ndate 2013/12/18 - 11:11\n\nCopyright (c) 2011-2013 inazumatv.com, inc.\n\nDistributed under the terms of the MIT license.\nhttp://www.opensource.org/licenses/mit-license.html\n\nThis notice shall be included in all copies or substantial portions of the Software.",
+            "class": "Annai"
+        },
+        {
+            "file": "src/external/HashChange.js",
+            "line": 13,
+            "description": "jQuery hashchange event - v1.3 - 7/21/2010\nhttp://benalman.com/projects/jquery-hashchange-plugin/\n\nCopyright (c) 2010 \"Cowboy\" Ben Alman\nDual licensed under the MIT and GPL licenses.\nhttp://benalman.com/about/license/",
+            "class": "Annai"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 1,
+            "description": "license inazumatv.com\nauthor (at)taikiken / htp://inazumatv.com\ndate 2013/12/18 - 12:20\n\nCopyright (c) 2011-2013 inazumatv.com, inc.\n\nDistributed under the terms of the MIT license.\nhttp://www.opensource.org/licenses/mit-license.html\n\nThis notice shall be included in all copies or substantial portions of the Software.\n\nrequire inazumatv.util, jQuery, jquery.ba.hashchange",
+            "class": "Annai"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 69,
+            "description": "Annai instance を取得します",
+            "return": {
+                "description": "Annai instance を返します",
+                "type": "Annai"
+            },
+            "static": 1,
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 83,
+            "description": "Annai へ jQuery object を設定。Annai を使用する前に実行する必要があります。<br>\nExternalJQ.imports から実行されます。",
+            "itemtype": "method",
+            "name": "activate",
+            "params": [
+                {
+                    "name": "jQuery",
+                    "description": "object",
+                    "type": "JQuery"
+                }
+            ],
+            "static": 1,
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 99,
+            "description": "Adds the specified event listener.",
+            "itemtype": "method",
+            "name": "addEventListener",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "The string type of the event.",
+                    "type": "String"
+                },
+                {
+                    "name": "listener",
+                    "description": "An object with a handleEvent method, or a function that will be called when\nthe event is dispatched.",
+                    "type": "Function | Object"
+                }
+            ],
+            "return": {
+                "description": "Returns the listener for chaining or assignment.",
+                "type": "Function | Object"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 108,
+            "description": "Removes the specified event listener.",
+            "itemtype": "method",
+            "name": "removeEventListener",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "The string type of the event.",
+                    "type": "String"
+                },
+                {
+                    "name": "listener",
+                    "description": "The listener function or object.",
+                    "type": "Function | Object"
+                }
+            ],
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 115,
+            "description": "Removes all listeners for the specified type, or all listeners of all types.",
+            "itemtype": "method",
+            "name": "removeAllEventListeners",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "The string type of the event. If omitted, all listeners for all types will be removed.",
+                    "type": "String",
+                    "optional": true
+                }
+            ],
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 121,
+            "description": "Indicates whether there is at least one listener for the specified event type.",
+            "itemtype": "method",
+            "name": "hasEventListener",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "The string type of the event.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if there is at least one listener for the specified event.",
+                "type": "Boolean"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 128,
+            "description": "Dispatches the specified event.",
+            "itemtype": "method",
+            "name": "dispatchEvent",
+            "params": [
+                {
+                    "name": "eventObj",
+                    "description": "An object with a \"type\" property, or a string type. If a string is used,\ndispatchEvent will construct a generic event object with \"type\" and \"params\" properties.",
+                    "type": "Object | String"
+                },
+                {
+                    "name": "target",
+                    "description": "The object to use as the target property of the event object. This will default to the\ndispatching object.",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "Returns true if any listener returned true.",
+                "type": "Boolean"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 142,
+            "description": "hashchange Event Handler",
+            "itemtype": "method",
+            "name": "_onHashChange",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "Event instance",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 162,
+            "description": "初期設定をします",
+            "itemtype": "method",
+            "name": "setUp",
+            "params": [
+                {
+                    "name": "root",
+                    "description": "http://example.com/#!/index",
+                    "type": "String"
+                },
+                {
+                    "name": "list",
+                    "description": "[ hashName... ]",
+                    "type": "Array.<String>"
+                },
+                {
+                    "name": "always",
+                    "description": "default false, optional",
+                    "type": "Boolean",
+                    "optional": true
+                }
+            ],
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 182,
+            "description": "kick hash event",
+            "itemtype": "method",
+            "name": "fire",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 194,
+            "description": "現在設定されている hash 値を取得",
+            "itemtype": "method",
+            "name": "getHashString",
+            "return": {
+                "description": "現在設定されている hash 値を返します",
+                "type": "String"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 203,
+            "description": "hash 値を設定",
+            "itemtype": "method",
+            "name": "setHashString",
+            "params": [
+                {
+                    "name": "hash",
+                    "description": "hash 値, \"#!/\"",
+                    "type": "String"
+                }
+            ],
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 213,
+            "itemtype": "method",
+            "name": "getProtocol",
+            "return": {
+                "description": "protocol, http: or https: を返します",
+                "type": "String|*"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 223,
+            "itemtype": "method",
+            "name": "getHost",
+            "return": {
+                "description": "host name を返します",
+                "type": "String|*"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 233,
+            "itemtype": "method",
+            "name": "getServer",
+            "return": {
+                "description": "http://example.com 形式の URLを返します",
+                "type": "String|*"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 243,
+            "description": "domainを除いた基点を設定します",
+            "itemtype": "method",
+            "name": "setRoot",
+            "params": [
+                {
+                    "name": "root",
+                    "description": "基点ロケーション",
+                    "type": "String"
+                }
+            ],
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 252,
+            "itemtype": "method",
+            "name": "getRoot",
+            "return": {
+                "description": "root を返します",
+                "type": "String|*"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 262,
+            "description": "信用できるlocation listを設定します",
+            "itemtype": "method",
+            "name": "setTrust",
+            "params": [
+                {
+                    "name": "list",
+                    "description": "url list 拡張子なし",
+                    "type": "Array"
+                }
+            ],
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 271,
+            "itemtype": "method",
+            "name": "getTrust",
+            "return": {
+                "description": "信用できるhashリストを返します",
+                "type": "Array"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 281,
+            "itemtype": "method",
+            "name": "getHash",
+            "return": {
+                "description": "現在のhash値を返す",
+                "type": "String"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 291,
+            "itemtype": "method",
+            "name": "isCorrect",
+            "return": {
+                "description": "現在のhashを信用できる？",
+                "type": "Boolean"
+            },
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 303,
+            "itemtype": "method",
+            "name": "_validate",
+            "params": [
+                {
+                    "name": "hash",
+                    "description": "hash値を渡します",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "hashを_trustsと比較し真偽値を返します",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 314,
+            "itemtype": "method",
+            "name": "_hashString",
+            "return": {
+                "description": "hash(#!/)以降のリストを返します",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 337,
+            "itemtype": "method",
+            "name": "_parameter",
+            "return": {
+                "description": "get parameter を\"?\"付きで返します",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 354,
+            "description": "get parameter を url から削除",
+            "itemtype": "method",
+            "name": "setUp",
+            "params": [
+                {
+                    "name": "loc",
+                    "description": "location string",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "get parameter を削除したurlを返します",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/Annai.js",
+            "line": 369,
+            "description": "get parameter を hash から削除",
+            "itemtype": "method",
+            "name": "_clean",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Annai",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/MITI.js",
+            "line": 1,
+            "description": "license inazumatv.com\nauthor (at)taikiken / htp://inazumatv.com\ndate 2013/12/18 - 10:59\n\nCopyright (c) 2011-2013 inazumatv.com, inc.\n\nDistributed under the terms of the MIT license.\nhttp://www.opensource.org/licenses/mit-license.html\n\nThis notice shall be included in all copies or substantial portions of the Software.\n\nrequire inazumatv.util, jQuery, jquery.ba.hashchange",
+            "class": "MITI",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/MITI.js",
+            "line": 18,
+            "description": "hash change event type",
+            "itemtype": "property",
+            "name": "CHANGE",
+            "final": "",
+            "type": "{string}",
+            "static": 1,
+            "class": "MITI",
+            "module": "inazumatv"
+        },
+        {
+            "file": "src/version.js",
+            "line": 14,
+            "description": "The version string for this release.",
+            "itemtype": "property",
+            "name": "version",
+            "type": "String",
+            "static": 1,
+            "class": "MITI",
+            "module": "MITI"
+        },
+        {
+            "file": "src/version.js",
+            "line": 22,
+            "description": "The build date for this release in UTC format.",
+            "itemtype": "property",
+            "name": "buildDate",
+            "type": "String",
+            "static": 1,
+            "class": "MITI",
+            "module": "MITI"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:37"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:69"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:194"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:213"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:223"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:233"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:252"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:271"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:281"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:291"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:303"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:314"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:337"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:354"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Annai.js:369"
+        },
+        {
+            "message": "Missing item type\nlicense inazumatv.com\nauthor (at)taikiken / htp://inazumatv.com\ndate 2013/12/18 - 11:11\n\nCopyright (c) 2011-2013 inazumatv.com, inc.\n\nDistributed under the terms of the MIT license.\nhttp://www.opensource.org/licenses/mit-license.html\n\nThis notice shall be included in all copies or substantial portions of the Software.",
+            "line": " src/external/HashChange.js:1"
+        },
+        {
+            "message": "Missing item type\njQuery hashchange event - v1.3 - 7/21/2010\nhttp://benalman.com/projects/jquery-hashchange-plugin/\n\nCopyright (c) 2010 \"Cowboy\" Ben Alman\nDual licensed under the MIT and GPL licenses.\nhttp://benalman.com/about/license/",
+            "line": " src/external/HashChange.js:13"
+        },
+        {
+            "message": "Missing item type\nlicense inazumatv.com\nauthor (at)taikiken / htp://inazumatv.com\ndate 2013/12/18 - 12:20\n\nCopyright (c) 2011-2013 inazumatv.com, inc.\n\nDistributed under the terms of the MIT license.\nhttp://www.opensource.org/licenses/mit-license.html\n\nThis notice shall be included in all copies or substantial portions of the Software.\n\nrequire inazumatv.util, jQuery, jquery.ba.hashchange",
+            "line": " src/Annai.js:1"
+        },
+        {
+            "message": "Missing item type\nAnnai instance を取得します",
+            "line": " src/Annai.js:69"
+        },
+        {
+            "message": "Missing item type\nlicense inazumatv.com\nauthor (at)taikiken / htp://inazumatv.com\ndate 2013/12/18 - 10:59\n\nCopyright (c) 2011-2013 inazumatv.com, inc.\n\nDistributed under the terms of the MIT license.\nhttp://www.opensource.org/licenses/mit-license.html\n\nThis notice shall be included in all copies or substantial portions of the Software.\n\nrequire inazumatv.util, jQuery, jquery.ba.hashchange",
+            "line": " src/MITI.js:1"
+        }
+    ]
+}

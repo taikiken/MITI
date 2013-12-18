@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MITI test hash</title>
+    <script type="text/javascript" src="dependence/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="dependence/inazumatv.util-0.8.01.js"></script>
+    <script type="text/javascript" src="../libs/miti-0.0.01.min.js"></script>
+</head>
+<body>
+<div><a href="#!/test">test</a></div>
+<div><a href="#!/test?12345">test?12345</a></div>
+<div><a href="#!/test?v=12345">test?v=12345</a></div>
+<div><a href="#!/other">other</a></div>
+<div id="message" style="padding: 8px; background-color: #fdffb5; font-size: 12px;"></div>
+<script type="text/javascript">
+//( function ( window ){
+//    "use strict";
+//    var document = window.document,
+//        inazumatv = window.inazumatv,
+//        MITI = window.MITI
+//    ;
+//
+//    var $message = $( "#message" );
+//
+//    $( "a" ).on( "click", function (){
+//
+//        $message.append( "<div style='font-weight: bold;'>click: " + $(this ).attr( "href" ) + "</div>" );
+//    } );
+//
+//    var Annai = inazumatv.jq.ExternalJQ.imports( "Annai", window.jQuery );
+//
+//    var annai = Annai.getInstance();
+//
+//    annai.setUp( "/", [ "test" ] );
+//    annai.addEventListener( MITI.CHANGE, onHashChange );
+//
+//    function onHashChange ( eventObj ) {
+//        var params = eventObj.params;
+//
+//        $message.append( "<div>" + params[ 0 ] + ", query: " + params[ 1 ] + ", hash: " + params[ 2 ] +"</div>" );
+//    }
+//
+//}( window ) );
+</script>
+</body>
+</html>

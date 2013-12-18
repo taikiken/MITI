@@ -1,0 +1,11 @@
+{
+    "source": [
+        "./src/MITI.js",
+        "./src/version.js",
+        "./src/Annai.js",
+
+        "./src/external/HashChange.js"
+    ],
+
+    "docs_out_path": "./out/MITIDocs/"
+}
