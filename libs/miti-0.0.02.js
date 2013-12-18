@@ -10,7 +10,7 @@
  *
  * This notice shall be included in all copies or substantial portions of the Software.
  *
- * require inazumatv.util, jQuery, jquery.ba.hashchange
+ * require inazumatv.util / https://github.com/taikiken/inazumatv, jQuery / http://jquery.com/, jquery.ba.hashchange / https://github.com/cowboy/jquery-hashchange
  */
 
 var MITI = {};
@@ -49,7 +49,7 @@ MITI.CHANGE = "mitiHashChange";/**
      * @type String
      * @static
      **/
-    s.buildDate = /*date*/"Wed, 18 Dec 2013 10:49:42 GMT"; // injected by build process
+    s.buildDate = /*date*/"Wed, 18 Dec 2013 11:19:46 GMT"; // injected by build process
 
 })( this.MITI );
 /**
@@ -209,7 +209,7 @@ MITI.CHANGE = "mitiHashChange";/**
             bool = this._validate( clean );
 
         if ( this._always || bool ) {
-            this.dispatchEvent( new EventObject( MITI.CHANGE, [ hash, parameter, clean ] ), this );
+            this.dispatchEvent( new EventObject( MITI.CHANGE, [ hash, parameter, clean, bool ] ), this );
         }
     };
 
@@ -459,7 +459,7 @@ MITI.CHANGE = "mitiHashChange";/**
     ;
 
     function HashChange () {
-        throw "SmoothScroll cannot be instantiated";
+        throw "HashChange cannot be instantiated";
     }
 
     HashChange.activate = function ( jQuery ){

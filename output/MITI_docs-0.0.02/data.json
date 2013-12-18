@@ -1,7 +1,7 @@
 {
     "project": {
         "name": "MITI",
-        "version": "0.0.01",
+        "version": "0.0.02",
         "description": "JavaScript hash change helper",
         "url": "",
         "logo": ""

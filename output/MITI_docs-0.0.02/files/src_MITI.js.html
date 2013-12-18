@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src/version.js - MITI</title>
+    <title>src/MITI.js - MITI</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 0.0.01</em>
+            <em>API Docs for: 0.0.02</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -88,41 +88,35 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src/version.js</h1>
+                        <h1 class="file-heading">File: src/MITI.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 /**
- * @module MITI
+ * license inazumatv.com
+ * author (at)taikiken / htp://inazumatv.com
+ * date 2013/12/18 - 10:59
+ *
+ * Copyright (c) 2011-2013 inazumatv.com, inc.
+ *
+ * Distributed under the terms of the MIT license.
+ * http://www.opensource.org/licenses/mit-license.html
+ *
+ * This notice shall be included in all copies or substantial portions of the Software.
+ *
+ * require inazumatv.util / https://github.com/taikiken/inazumatv, jQuery / http://jquery.com/, jquery.ba.hashchange / https://github.com/cowboy/jquery-hashchange
  */
-(function( MITI ) {
-    &quot;use strict&quot;;
 
-    /**
-     * Static class holding library specific information such as the version and buildDate of
-     * the library.
-     * @class MITI
-     **/
-    var s = MITI.build = MITI.build || {};
+var MITI = {};
 
-    /**
-     * The version string for this release.
-     * @property version
-     * @type String
-     * @static
-     **/
-    s.version = /*version*/&quot;0.0.01&quot;; // injected by build process
-
-    /**
-     * The build date for this release in UTC format.
-     * @property buildDate
-     * @type String
-     * @static
-     **/
-    s.buildDate = /*date*/&quot;Wed, 18 Dec 2013 11:19:46 GMT&quot;; // injected by build process
-
-})( this.MITI );
-
+/**
+ * hash change event type
+ * @for MITI
+ * @const CHANGE
+ * @type {string}
+ * @static
+ */
+MITI.CHANGE = &quot;mitiHashChange&quot;;
     </pre>
 </div>
 
