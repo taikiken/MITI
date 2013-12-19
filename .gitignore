@@ -4,3 +4,6 @@ out
 *.idea
 .idea
 node_modules
+MITI_docs*
+output/miti*
+output/MITI*

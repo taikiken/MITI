@@ -41,7 +41,7 @@ MITI.CHANGE = "mitiHashChange";/**
      * @type String
      * @static
      **/
-    s.version = /*version*/"0.0.01"; // injected by build process
+    s.version = /*version*/"0.0.03"; // injected by build process
 
     /**
      * The build date for this release in UTC format.
@@ -49,7 +49,7 @@ MITI.CHANGE = "mitiHashChange";/**
      * @type String
      * @static
      **/
-    s.buildDate = /*date*/"Wed, 18 Dec 2013 11:19:46 GMT"; // injected by build process
+    s.buildDate = /*date*/"Thu, 19 Dec 2013 04:30:24 GMT"; // injected by build process
 
 })( this.MITI );
 /**
@@ -89,7 +89,24 @@ MITI.CHANGE = "mitiHashChange";/**
         _root;
 
     /**
-     * hash change 監視 singleton
+     * hash change 監視 singleton<br>
+     * event params にイベント情報が設定されています。<br>
+     *
+     *     function onHashChange ( eventObj ) {
+     *          var eventInfo = eventObj.params[ 0 ];
+     *
+     *          // eventInfo.hash {String} get query 付 xxx?12345
+     *          // eventInfo.query {String} get query ?12345
+     *          // eventInfo.key {String} hash key xxx
+     *          // eventInfo.correct {boolean} hash key を信用リストと照合した結果
+     *     }
+     *
+     *     var Annai = inazumatv.jq.ExternalJQ.imports( "Annai", window.jQuery );
+     *     var annai = Annai.getInstance();
+     *     annai.setUp( "http://example.com/PATH_TO_ROOT", [ "index", "test1", "test2" ], true );
+     *
+     *     annai.addEventListener( MITI.CHANGE, onHashChange );
+     *
      * @class Annai
      * @constructor
      * @returns {Annai} Annai instance を返します
@@ -194,7 +211,8 @@ MITI.CHANGE = "mitiHashChange";/**
     EventDispatcher.initialize( p );
 
     /**
-     * hashchange Event Handler
+     * hashchange Event Handler<br>
+     *
      * @method _onHashChange
      * @param {Event} e Event instance
      * @private
@@ -209,12 +227,20 @@ MITI.CHANGE = "mitiHashChange";/**
             bool = this._validate( clean );
 
         if ( this._always || bool ) {
-            this.dispatchEvent( new EventObject( MITI.CHANGE, [ hash, parameter, clean, bool ] ), this );
+            this.dispatchEvent( new EventObject( MITI.CHANGE, {
+                hash: hash,
+                query: parameter,
+                key: clean,
+                correct: bool
+            } ), this );
         }
     };
 
     /**
-     * 初期設定をします
+     * 初期設定をします。<br>
+     * always に true が設定された場合hash change毎常にEvent Handlerが呼ばれます。<br>
+     * defaultはfalseで信用リストと照合し真の場合のみ呼び出されます。
+     *
      * @method setUp
      * @param {String} root http://example.com/#!/index
      * @param {Array.<String>} list [ hashName... ]
@@ -295,7 +321,7 @@ MITI.CHANGE = "mitiHashChange";/**
 
     // -- root
     /**
-     * domainを除いた基点を設定します
+     * URL基点を設定します
      * @method setRoot
      * @param {String} root 基点ロケーション
      */
@@ -306,7 +332,7 @@ MITI.CHANGE = "mitiHashChange";/**
     /**
      *
      * @method getRoot
-     * @returns {string|*} root を返します
+     * @returns {string} 設定された root を返します
      */
     p.getRoot = function (){
         return _root;
@@ -375,13 +401,6 @@ MITI.CHANGE = "mitiHashChange";/**
         var hash = window.location.hash;
 
         if ( hash.indexOf( _hashString ) === -1 ) {
-//            // for IE 6 history back problem
-//            if ( hash.indexOf( "#" ) !== -1 && !hash.split( "#" ).pop() ) {
-////                window.location.href = window.location.href.split( "#" ).shift();
-//                window.location.href = this.getRoot();
-////                alert( this.getRoot() );
-//                return "";
-//            }
             return hash;
         } else {
             return window.location.hash.split( _hashString ).pop();
