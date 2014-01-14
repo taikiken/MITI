@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>MITI test hash</title>
     <script type="text/javascript" src="../dependence/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="../dependence/inazumatv.util-0.8.02.min.js"></script>
-    <script type="text/javascript" src="../../libs/miti-0.0.03.min.js"></script>
+    <script type="text/javascript" src="../dependence/inazumatv.util-0.8.8.min.js"></script>
+    <script type="text/javascript" src="../../libs/miti-0.0.3.min.js"></script>
 </head>
 <body>
 <strong>index, test is correct</strong>
@@ -40,16 +40,16 @@
 
 	var locs = loc2.split( "/" );
 
-    annai.setUp( locs.join( "/" ) + "#!/index", [ "test", "index" ], true );
-    annai.addEventListener( MITI.CHANGE, onHashChange );
+	annai.setUp( locs.join( "/" ) + "#!/index", [ "test", "index" ], true );
+	annai.addEventListener( MITI.CHANGE, onHashChange );
 
-    function onHashChange ( eventObj ) {
-        var eventInfo = eventObj.params[ 0 ];
+	function onHashChange ( eventObj ) {
+		var eventInfo = eventObj.params[ 0 ];
 
 		var fontColor =  eventInfo.correct ? "black": "red";
 
-        $message.append( "<div style='color:"  + fontColor +"'>" + eventInfo.hash + ", query: " + eventInfo.query + ", hash: " + eventInfo.key + ", correct: " + eventInfo.correct +"</div>" );
-    }
+		$message.append( "<div style='color:"  + fontColor +"'>" + eventInfo.hash + ", query: " + eventInfo.query + ", hash: " + eventInfo.key + ", correct: " + eventInfo.correct +"</div>" );
+	}
 
 	if ( window.location.href !== annai.getRoot() ) {
 		window.location.replace( annai.getRoot() );
