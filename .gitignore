@@ -3,7 +3,5 @@ out
 *.iml
 *.idea
 .idea
-node_modules
-MITI_docs*
-output/miti*
-output/MITI*
+_build_tools
+_output
