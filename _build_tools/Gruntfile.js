@@ -15,7 +15,6 @@ module.exports = function(grunt) {
 
         // Setup doc names / paths.
         docsName: '<%= pkg.name %>_docs-<%= version %>',
-//        docsZip: "<%= docsName %>.zip",
         docsFolder: "../_output/<%= docsName %>/",
 
         // Setup Uglify for JS minification.
@@ -56,7 +55,7 @@ module.exports = function(grunt) {
                 url: '<%= pkg.url %>',
                 logo: '<%= pkg.logo %>',
                 options: {
-                    paths: ['./src/'],
+                    paths: ['/src/'],
                     outdir: '<%= docsFolder %>',
                     linkNatives: true,
                     attributesEmit: true,
