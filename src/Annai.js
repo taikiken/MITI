@@ -360,7 +360,6 @@
      * @private
      */
     p._parameter = function (){
-//        var hash = this._hash();
         var hash = window.location.href;
 
         if ( hash.indexOf( "?" ) === -1 ) {
