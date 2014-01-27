@@ -18,8 +18,8 @@ var MITI = {};
 /**
  * hash change event type
  * @for MITI
- * @const CHANGE
+ * @const HASH_CHANGE
  * @type {string}
  * @static
  */
-MITI.CHANGE = "mitiHashChange";
+MITI.HASH_CHANGE = "mitiHashChange";

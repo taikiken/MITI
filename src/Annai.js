@@ -51,7 +51,7 @@
      *     var annai = Annai.getInstance();
      *     annai.setUp( "http://example.com/PATH_TO_ROOT", [ "index", "test1", "test2" ], true );
      *
-     *     annai.addEventListener( MITI.CHANGE, onHashChange );
+     *     annai.addEventListener( MITI.HASH_CHANGE, onHashChange );
      *
      * @class Annai
      * @constructor
@@ -173,7 +173,7 @@
             bool = this._validate( clean );
 
         if ( this._always || bool ) {
-            this.dispatchEvent( new EventObject( MITI.CHANGE, {
+            this.dispatchEvent( new EventObject( MITI.HASH_CHANGE, {
                 hash: hash,
                 query: parameter,
                 key: clean,

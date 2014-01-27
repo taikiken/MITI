@@ -25,6 +25,6 @@
      * @type String
      * @static
      **/
-    s.buildDate = /*date*/"Tue, 14 Jan 2014 12:41:24 GMT"; // injected by build process
+    s.buildDate = /*date*/"Fri, 24 Jan 2014 12:31:37 GMT"; // injected by build process
 
 })( this.MITI );

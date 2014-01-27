@@ -18,11 +18,11 @@ var MITI = {};
 /**
  * hash change event type
  * @for MITI
- * @const CHANGE
+ * @const HASH_CHANGE
  * @type {string}
  * @static
  */
-MITI.CHANGE = "mitiHashChange";/**
+MITI.HASH_CHANGE = "mitiHashChange";/**
  * @module MITI
  */
 (function( MITI ) {
@@ -49,7 +49,7 @@ MITI.CHANGE = "mitiHashChange";/**
      * @type String
      * @static
      **/
-    s.buildDate = /*date*/"Tue, 14 Jan 2014 12:39:20 GMT"; // injected by build process
+    s.buildDate = /*date*/"Fri, 24 Jan 2014 12:31:13 GMT"; // injected by build process
 
 })( this.MITI );
 /**
@@ -105,7 +105,7 @@ MITI.CHANGE = "mitiHashChange";/**
      *     var annai = Annai.getInstance();
      *     annai.setUp( "http://example.com/PATH_TO_ROOT", [ "index", "test1", "test2" ], true );
      *
-     *     annai.addEventListener( MITI.CHANGE, onHashChange );
+     *     annai.addEventListener( MITI.HASH_CHANGE, onHashChange );
      *
      * @class Annai
      * @constructor
@@ -227,7 +227,7 @@ MITI.CHANGE = "mitiHashChange";/**
             bool = this._validate( clean );
 
         if ( this._always || bool ) {
-            this.dispatchEvent( new EventObject( MITI.CHANGE, {
+            this.dispatchEvent( new EventObject( MITI.HASH_CHANGE, {
                 hash: hash,
                 query: parameter,
                 key: clean,
