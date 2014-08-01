@@ -17,7 +17,7 @@
      * @type String
      * @static
      **/
-    s.version = /*version*/"0.0.3"; // injected by build process
+    s.version = /*version*/"0.0.4"; // injected by build process
 
     /**
      * The build date for this release in UTC format.
@@ -25,6 +25,6 @@
      * @type String
      * @static
      **/
-    s.buildDate = /*date*/"Fri, 24 Jan 2014 12:31:37 GMT"; // injected by build process
+    s.buildDate = /*date*/"Mon, 28 Jul 2014 06:46:12 GMT"; // injected by build process
 
 })( this.MITI );
